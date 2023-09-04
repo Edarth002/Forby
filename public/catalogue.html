@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="logo222.png" type="image/x-icon">
+    <link rel="stylesheet" href="./tailwind.css">
+</head>
+
+<body class="bg-cover bg-center bg-no-repeat bg-fixed"
+    style="background-image: url('Image.png'); font-family: sans-serif;">
+    <div class="flex items-center justify-between p-4">
+        <div class="logo">
+            <a href="C:\Users\user\Documents\Forbystyles\public\index.html">
+                <img src="logo222.png" alt="logo" class="w-40 cursor-pointer">
+            </a>
+        </div>
+        <div class="ref space-x-4">
+            <div class="relative group">
+                <a href="#men" class="font-semibold text-white">Men</a>
+            </div>
+            <div class="relative group">
+                <a href="#women" class="font-semibold text-white">Women</a>
+            </div>
+            <div class="relative group">
+                <a href="#" class="font-semibold text-white">Contact</a>
+                <div class="sub-links absolute hidden min-w-50 bg-gold w-150 shadow-md z-10 rounded-xl">
+                    <ul class="list-none">
+                        <li><a href="#"><img src="twitter.png" alt="Twitter"></a></li>
+                        <li><a href="#"><img src="instagram.png" alt="Instagram"></a></li>
+                        <li><a href="mailto:Forbystyles@gmail.com"><img src="facebook icon.png" alt="Email"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center text-antiquewhite">
+        <h2 class="text-6xl font-bold inline-block bg-gradient-to-r from-yellow-300 to-gray-300 text-transparent cursor-pointer"
+            data-text="Forby Styles">Forby Styles</h2>
+        <p>Define your <span class="gradient-p">style</span> and scroll down to place your order</p>
+        <div class="mt-8">
+            <a href="#order"
+                class="border-2 border-gold bg-black text-white text-lg font-semibold px-8 py-3 rounded-full hover:border-transparent hover:bg-gold hover:text-black transition-all">Shop
+                Now</a>
+        </div>
+    </div>
+
+    <div class="container mx-auto p-8" id="gallery">
+        <p id="men" class="text-3xl font-semibold mt-10">Men</p>
+        <div class="flex flex-wrap justify-center mt-5" id="men">
+            <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-2">
+                <img src="cat2.jpg" alt="Frby" class="w-full object-contain p-2 rounded-lg">
+            </div>
+            <!-- Repeat this pattern for other images -->
+        </div>
+        <div class="flex justify-center mt-5">
+            <button type="button" onclick="sendEmail()" class="btn btn-primary hidden md:block"
+                id="order">Order</button>
+        </div>
+
+        <p id="women" class="text-3xl font-semibold mt-10">Women</p>
+        <div class="flex flex-wrap justify-center mt-5" id="women">
+            <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-2">
+                <img src="cat1.jpg" alt="Frby" class="w-full object-contain p-2 rounded-lg">
+            </div>
+            <!-- Repeat this pattern for other images -->
+        </div>
+        <div class="flex justify-center mt-5">
+            <button type="button" onclick="sendEmail()" class="btn btn-primary">Order</button>
+        </div>
+    </div>
+
+    <script src="forbystyles.js"></script>
+</body>
+
+</html>
